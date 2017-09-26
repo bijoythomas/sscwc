@@ -231,9 +231,9 @@
             <!-- http://maven.apache.org/guides/mini/guide-building-for-different-environments.html -->
             <id>openshift</id>
             <properties>
-                <db.username>admin6FUYIyh</db.username>
-                <db.password>azKLDQNKrht-</db.password>
-                <db.schema>dswa</db.schema>
+                <db.username>userDHQ</db.username>
+                <db.password>j0LwFaOcFw3DuEpw-</db.password>
+                <db.schema>dswacwc</db.schema>
             </properties>
             <build>
                 <finalName>dswa</finalName>
