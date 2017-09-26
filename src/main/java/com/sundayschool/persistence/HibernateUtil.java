@@ -22,12 +22,16 @@ public class HibernateUtil
             username = properties.getProperty("db.user");
             password = properties.getProperty("db.passwd");
             String schema = properties.getProperty("db.schema");
-            String dbHost = System.getenv("OPENSHIFT_MYSQL_DB_HOST");
-            String dbPort = System.getenv("OPENSHIFT_MYSQL_DB_PORT");
-            if (dbHost == null) {
+            String dbHost = null;
+            String dbPort = null;
+            String envPassword = System.getenv("MYSQL_PASSWORD");
+            if (envPassword == null) {
             	dbHost = "localhost";
             	dbPort = "3306";
             	password = "";
+            } else {
+            	dbHost = "mysql";
+            	dbPort = "3306";
             }
             dbUrl = "jdbc:mysql://" + dbHost + ":" + dbPort + "/" + schema;
             System.out.println(dbUrl);

@@ -232,7 +232,7 @@
             <id>openshift</id>
             <properties>
                 <db.username>userDHQ</db.username>
-                <db.password>j0LwFaOcFw3DuEpw-</db.password>
+                <db.password>q1w2e3r4</db.password>
                 <db.schema>dswacwc</db.schema>
             </properties>
             <build>
