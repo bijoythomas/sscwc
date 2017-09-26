@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.sundayschool.persistence.RegionToChurch" table="region_to_church">
+        <meta attribute="class-description">
+            This class contains the region to church mapping
+        </meta>
+        <id name="id" type="java.lang.Integer" column="id">
+            <generator class="increment"/>
+        </id>
+        <property name="region" column="region" type="string"/>
+        <property name="church" column="church" type="string"/>
+        <property name="venue" column="venue" type="boolean"/>
+    </class>
+</hibernate-mapping>
