@@ -30,7 +30,7 @@ public class HibernateUtil
             	dbPort = "3306";
             	password = "";
             } else {
-            	dbHost = "dswacwc-mysql";
+            	dbHost = "sscompetitions-mysql";
             	dbPort = "3306";
             }
             dbUrl = "jdbc:mysql://" + dbHost + ":" + dbPort + "/" + schema;
