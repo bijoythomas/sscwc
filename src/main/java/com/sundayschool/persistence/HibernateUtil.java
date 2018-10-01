@@ -24,7 +24,7 @@ public class HibernateUtil
             String schema = properties.getProperty("db.schema");
             String dbHost = null;
             String dbPort = null;
-            String envPassword = System.getenv("MYSQL_PASSWORD");
+            String envPassword = System.getenv("DB_PASSWORD");
             if (envPassword == null) {
             	dbHost = "localhost";
             	dbPort = "3306";
